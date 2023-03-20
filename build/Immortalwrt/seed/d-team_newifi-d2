@@ -1,0 +1,21 @@
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt7621=y
+CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
+CONFIG_PACKAGE_6rd=y
+CONFIG_PACKAGE_6to4=y
+# CONFIG_PACKAGE_dnsmasq_full_conntrack is not set
+# CONFIG_PACKAGE_kmod-ipt-offload is not set
+# CONFIG_PACKAGE_kmod-nf-flow is not set
+CONFIG_PACKAGE_libnetsnmp=y
+CONFIG_PACKAGE_libpci=y
+CONFIG_PACKAGE_luci-app-argon-config=y
+CONFIG_PACKAGE_luci-app-design-config=y
+# CONFIG_PACKAGE_luci-app-turboacc is not set
+CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-design-config-zh-cn=y
+CONFIG_PACKAGE_luci-theme-design=y
+CONFIG_PACKAGE_openssh-sftp-server=y
+CONFIG_PACKAGE_snmpd=y
+CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
+CONFIG_PACKAGE_libnetfilter-conntrack=y
+CONFIG_PACKAGE_libnfnetlink=y

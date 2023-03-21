@@ -80,7 +80,7 @@ sed -i 's%"KMS 服务器"%"KMS激活"%g' `egrep "KMS 服务器" -rl ./`
 sed -i 's%"TTYD 终端"%"TTYD"%g' `egrep "TTYD 终端" -rl ./`
 sed -i 's%"USB 打印服务器"%"打印服务"%g' `egrep "USB 打印服务器" -rl ./`
 sed -i 's%"Web 管理"%"Web管理"%g' `egrep "Web 管理" -rl ./`
-sed -i 's%"管理权"%"更改改密码"%g' `egrep "管理权" -rl ./`
+sed -i 's%"管理权"%"更改密码"%g' `egrep "管理权" -rl ./`
 sed -i 's%"NetData"%"实时监控"%g' `egrep "NetData" -rl ./`
 sed -i 's%"DDNSTO 远程控制"%"DDNSTO"%g' `egrep "DDNSTO 远程控制" -rl ./`
 sed -i 's%"wolplus"%"网络唤醒"%g' `egrep "wolplus" -rl ./`

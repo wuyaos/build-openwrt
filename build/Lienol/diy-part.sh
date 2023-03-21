@@ -6,9 +6,9 @@
 
 
 # 后台IP设置
-export Ipv4_ipaddr="192.168.123.1"            # 修改openwrt后台地址(填0为关闭)
+export Ipv4_ipaddr="192.168.123.1"          # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"         # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
-export Op_name="Lienol"                # 修改主机名称为OpenWrt-123(填0为不作修改)
+export Op_name="Lienol"                     # 修改主机名称为OpenWrt-123(填0为不作修改)
 
 # 默认主题设置
 export Mandatory_theme="argon"              # 将bootstrap替换您需要的主题为必选主题(可自行更改您要的,源码要带此主题就行,填写名称也要写对) (填写主题名称,填0为不作修改)
@@ -85,7 +85,8 @@ sed -i 's/"NetData"/"实时监控"/g' `egrep "NetData" -rl ./`
 sed -i 's/"DDNSTO 远程控制"/"DDNSTO"/g' `egrep "DDNSTO 远程控制" -rl ./`
 sed -i 's/"wolplus"/"网络唤醒"/g' `egrep "wolplus" -rl ./`
 sed -i 's/"IP/MAC Binding"/"IP/MAC绑定"/g' `egrep "IP/MAC Binding" -rl ./`
-
+sed -i 's/"带宽监控"/"监控"/g' `grep "带宽监控" -rl ./`
+sed -i 's/"Argon 主题设置"/"Argon设置"/g' `grep "Argon 主题设置" -rl ./`
 
 # 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间(根据编译机型变化,自行调整删除名称)
 cat >"$CLEAR_PATH" <<-EOF

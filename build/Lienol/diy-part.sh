@@ -82,9 +82,9 @@ sed -i 's/"Web 管理"/"Web管理"/g' `egrep "Web 管理" -rl ./`
 sed -i 's/"管理权"/"更改密码"/g' `egrep "管理权" -rl ./`
 sed -i 's/"带宽监控"/"监控"/g' `egrep "带宽监控" -rl ./`
 sed -i 's/"NetData"/"实时监控"/g' `egrep "NetData" -rl ./`
-sed -i 's/"DDNSTO 远程控制"/"DDNSTO"/g' `egrep "DDNSTO 远程控制" -rl ./`
-sed -i 's/"wolplus"/"网络唤醒"/g' `egrep "wolplus" -rl ./`
-sed -i 's/"IP/MAC Binding"/"IP/MAC绑定"/g' `egrep "IP/MAC Binding" -rl ./`
+# sed -i 's/"DDNSTO 远程控制"/"DDNSTO"/g' `egrep "DDNSTO 远程控制" -rl ./`
+# sed -i 's/"wolplus"/"网络唤醒"/g' `egrep "wolplus" -rl ./`
+# sed -i 's/"IP/MAC Binding"/"IP/MAC绑定"/g' `egrep "IP/MAC Binding" -rl ./`
 
 # 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间(根据编译机型变化,自行调整删除名称)
 cat >"$CLEAR_PATH" <<-EOF
